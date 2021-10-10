@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chou chou</title>
+    <link href='https://css.gg/moon.css' rel='stylesheet'>
+    <link href='https://css.gg/sun.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__up">
+                <div class="header__logo">
+                    <h1>
+                        <a href="#">Diner</a>
+                    </h1>
+                </div>
+                <div class="header__search">
+                    <div class="search__bar">
+                        <form action="#" class="position-relative">
+                            <input type="search" name="search" placeholder="Search here.." class="search__input"
+                                required>
+                            <span class="fa fa-search search__icon"></span>
+                        </form>
+                    </div>
+                    <div class="search__darkmode">
+                        <label for="checkbox" class="theme-switch">
+                            <input type="checkbox" id="checkbox" onclick="myFunction()">
+                            <div class="mode-container">
+                                <i class="gg-sun"></i>
+                                <i class="gg-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="search__nav">
+                        <button type="button" id="trigger-overlay" onclick="openFunction()">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="overlay overlay-scale" id="scale">
+                    <button type="button" class="overlay-lose" onclick="closeFunction()">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">404</a>
+                            </li>
+                            <li>
+                                <a href="#">Landing Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">Short Codes</a>
+                            </li>
+                            <li>
+                                <a href="#">Email</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__info ">
+                <h1>The Only Thing We Love More Than Food Is You!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur
+                    illum facere.</p>
+                <a href="#" class="btn btn-white ">
+                    Read More
+                    <span class="fa fa-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="intro mt-5">
+        <div class="container">
+            <div class="intro__list row">
+                <div class="intro__item intro__item__1 col-sm-5">
+                    <h1>About Us</h1>
+                    <h1>We found our creative space that is open for you.</h1>
+                </div>
+                <div class="intro__item col-sm-7">
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
+                        amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor
+                        sit.</p>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
+                        amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="booktable">
+        <div class="container-fluid">
+            <div class="booktable__list row ">
+                <div class="booktable__img col-md-6">
+                    <div class="booktable__img__content"></div>
+                </div>
+                <div class="booktable__baner col-md-6 ">
+                    <h1>More than 3000 Restaurants</h1>
+                    <h1>Book a table easly at the best price</h1>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis
+                        quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
+                    </p>
+                    <div class="booktable__subscribe row">
+                        <div class="booktable_icon col-6">
+                            <i class="fa fa-thumbs-up"></i>
+                            <h1>
+                                <a href="#">Best Deals</a>
+                            </h1>
+                            <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                        </div>
+                        <div class="booktable_icon col-6">
+                            <i class="fa fa-utensils"></i>
+                            <h1>
+                                <a href="#">Best Deals</a>
+                            </h1>
+                            <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <h1>What's New</h1>
+            <h1>Popular Categories</h1>
+            <div class="product__list row">
+                <div class="product__item col-sm-6 col-md-4">
+                    <div class="product__item__img">
+                        <a href="#">
+                            <img src="./images/g1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__item__info">
+                        <h1>
+                            <a href="#">Vegetarian</a>
+                        </h1>
+                        <h1>$350</h1>
+                    </div>
+                </div>
+                <div class="product__item col-sm-6 col-md-4">
+                    <div class="product__item__img">
+                        <a href="#">
+                            <img src="./images/g2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__item__info">
+                        <h1>
+                            <a href="#">Drinks</a>
+                        </h1>
+                        <h1>$550</h1>
+                    </div>
+                </div>
+                <div class="product__item col-sm-6 col-md-4">
+                    <div class="product__item__img">
+                        <a href="#">
+                            <img src="./images/g3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__item__info">
+                        <h1>
+                            <a href="#">Lunch</a>
+                        </h1>
+                        <h1>$650</h1>
+                    </div>
+                </div>
+                <div class="product__item col-sm-6 col-md-4">
+                    <div class="product__item__img">
+                        <a href="#">
+                            <img src="./images/g4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__item__info">
+                        <h1>
+                            <a href="#">Bakery</a>
+                        </h1>
+                        <h1>$550</h1>
+                    </div>
+                </div>
+                <div class="product__item col-sm-6 col-md-4">
+                    <div class="product__item__img">
+                        <a href="#">
+                            <img src="./images/g5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__item__info">
+                        <h1>
+                            <a href="#">Desserts</a>
+                        </h1>
+                        <h1>$750</h1>
+                    </div>
+
+                </div>
+                <div class="product__item col-sm-6 col-md-4">
+                    <div class="product__item__img">
+                        <a href="#">
+                            <img src="./images/g6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product__item__info">
+                        <h1>
+                            <a href="#">Pizza</a>
+                        </h1>
+                        <h1>$850</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fetures mt-5">
+        <div class="container">
+            <div class="fetures__list row">
+                <div class="fetures__item col-sm-12 col-md-4">
+                    <div class="fetures__item__content">
+                        <div class="fetures__item__grid">
+                            <div class="fetures__icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <div class="fetures__info">
+                                <p>01</p>
+                                <h1>
+                                    <a href="#">Soup</a>
+                                </h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                    </div>
+                </div>
+                <div class="fetures__item col-sm-12 col-md-4">
+                    <div class="fetures__item__content">
+                        <div class="fetures__item__grid">
+                            <div class="fetures__icon">
+                                <i class="fa fa-shield-alt"></i>
+                            </div>
+                            <div class="fetures__info">
+                                <p>01</p>
+                                <h1>
+                                    <a href="#">Soup</a>
+                                </h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                    </div>
+                </div>
+                <div class="fetures__item col-sm-12 col-md-4">
+                    <div class="fetures__item__content">
+                        <div class="fetures__item__grid">
+                            <div class="fetures__icon">
+                                <i class="fa fa-thermometer-full"></i>
+                            </div>
+                            <div class="fetures__info">
+                                <p>01</p>
+                                <h1>
+                                    <a href="#">Soup</a>
+                                </h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                    </div>
+                </div>
+                <div class="fetures__item col-sm-12 col-md-4">
+                    <div class="fetures__item__content">
+                        <div class="fetures__item__grid">
+                            <div class="fetures__icon">
+                                <i class="fa fa-american-sign-language-interpreting"></i>
+                            </div>
+                            <div class="fetures__info">
+                                <p>01</p>
+                                <h1>
+                                    <a href="#">Soup</a>
+                                </h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                    </div>
+                </div>
+                <div class="fetures__item col-sm-12 col-md-4">
+                    <div class="fetures__item__content">
+                        <div class="fetures__item__grid">
+                            <div class="fetures__icon">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <div class="fetures__info">
+                                <p>01</p>
+                                <h1>
+                                    <a href="#">Soup</a>
+                                </h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                    </div>
+                </div>
+                <div class="fetures__item col-sm-12 col-md-4">
+                    <div class="fetures__item__content">
+                        <div class="fetures__item__grid">
+                            <div class="fetures__icon">
+                                <i class="fa fa-eraser"></i>
+                            </div>
+                            <div class="fetures__info">
+                                <p>01</p>
+                                <h1>
+                                    <a href="#">Soup</a>
+                                </h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact mt-5">
+        <div class="container">
+            <div class="contact__content">
+                <h1>Deliciousness jumping into the mouth.</h1>
+                <div class="contact__button mt-5">
+                    <a href="#" class="btn btn-style btn-white mr-4">
+                        Read More
+                        <span class="fa fa-chevron-right"></span>
+                    </a>
+                    <a href="#" class="btn btn-style btn-primary">
+                        Contact Us
+                        <span class="fa fa-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sta">
+        <div class="container">
+            <div class="sta__list row">
+                <div class="sta__item col-12 col-sm-6 col-md-3">
+                    <div class="sta__item__content">
+                        <i class="fa fa-building"></i>
+                        <h1><span class="counter">15100</span></h1>
+                        <p>Branches</p>
+                    </div>
+                </div>
+                <div class="sta__item col-12 col-sm-6 col-md-3">
+                    <div class="sta__item__content">
+                        <i class="fa fa-utensils"></i>
+                        <h1><span class="counter">19256</span></h1>
+                        <p>Branches</p>
+                    </div>
+                </div>
+                <div class="sta__item col-12 col-sm-6 col-md-3">
+                    <div class="sta__item__content">
+                        <i class="fa fa-users"></i>
+                        <h1><span class="counter">12100</span></h1>
+                        <p>Chefs</p>
+                    </div>
+                </div>
+                <div class="sta__item col-12 col-sm-6 col-md-3">
+                    <div class="sta__item__content">
+                        <i class="fa fa-smile"></i>
+                        <h1><span class="counter">2560</span></h1>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="container">
+            <div class="video__content">
+                <a href="#">
+                    <span class="video__icon">
+                        <span class="fa fa-play"></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="post">
+        <div class="container">
+            <h1>Latest Posts</h1>
+            <p>Blog Posts</p>
+            <div class="post__list row">
+                <div class="post__item col-sm-12 col-md-4">
+                    <div class="post__item__content">
+                        <div class="post__item__img">
+                            <a href="#">
+                                <img src="./images/banner1.jpg" alt="">
+                            </a>
+                            <div class="post__item__img__reciepe">
+                                <a href="#">Reciepe</a>
+                                <span class="fa fa-clock">10 Min Cook</span>
+                            </div>
+                        </div>
+                        <div class="post__item__detail">
+                            <a href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                            <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <div class="post__item__info">
+                                <div class="post__item__info__name">
+                                    <a href="#">
+                                        <img src="./images/team1.jpg" alt="">
+                                    </a>
+                                    <a href="#">Rashed Kabir</a>
+                                </div>
+                                <a href="#">
+                                    Read More<span class="fa fa-chevron-right ml-2"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item col-sm-12 col-md-4">
+                    <div class="post__item__content">
+                        <div class="post__item__img">
+                            <a href="#">
+                                <img src="./images/banner3.jpg" alt="">
+                            </a>
+                            <div class="post__item__img__reciepe">
+                                <a href="#">Reciepe</a>
+                                <span class="fa fa-clock">10 Min Cook</span>
+                            </div>
+                        </div>
+                        <div class="post__item__detail">
+                            <a href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                            <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <div class="post__item__info">
+                                <div class="post__item__info__name">
+                                    <a href="#">
+                                        <img src="./images/team2.jpg" alt="">
+                                    </a>
+                                    <a href="#">Rashed Kabir</a>
+                                </div>
+                                <a href="#">
+                                    Read More<span class="fa fa-chevron-right ml-2"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item col-sm-12 col-md-4">
+                    <div class="post__item__content">
+                        <div class="post__item__img">
+                            <a href="#">
+                                <img src="./images/banner1.jpg" alt="">
+                            </a>
+                            <div class="post__item__img__reciepe">
+                                <a href="#">Reciepe</a>
+                                <span class="fa fa-clock">10 Min Cook</span>
+                            </div>
+                        </div>
+                        <div class="post__item__detail">
+                            <a href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                            <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <div class="post__item__info">
+                                <div class="post__item__info__name">
+                                    <a href="#">
+                                        <img src="./images/team3.jpg" alt="">
+                                    </a>
+                                    <a href="#">Rashed Kabir</a>
+                                </div>
+                                <a href="#">
+                                    Read More<span class="fa fa-chevron-right ml-2"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cmt mb-5">
+        <div class="container text-center">
+            <h1>Testimonials</h1>
+            <h1>What People Say</h1>
+            <div class="owl-carousel owl-theme mt-5">
+                <div class="item">
+                    <a href="#">
+                        <img src="./images/team1.jpg" alt="">
+                    </a>
+                    <blockquote>
+                        <q>OMG! I cannot believe. It's Awesome</q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                        Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="item__content">
+                        <h1>Johnson william</h1>
+                        <p>Customer</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="./images/team2.jpg" alt="">
+                    </a>
+                    <blockquote>
+                        <q>OMG! I cannot believe. It's Awesome</q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                        Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="item__content">
+                        <h1>Alexander Sakura</h1>
+                        <p>Customer</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="./images/team3.jpg" alt="">
+                    </a>
+                    <blockquote>
+                        <q>OMG! I cannot believe. It's Awesome</q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                        Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="item__content">
+                        <h1>John Wilson</h1>
+                        <p>Customer</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="./images/team1.jpg" alt="">
+                    </a>
+                    <blockquote>
+                        <q>OMG! I cannot believe. It's Awesome</q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                        Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="item__content">
+                        <h1>Johnson william</h1>
+                        <p>Customer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__list row">
+                <div class="footer__item__1 col-12 col-sm-12 col-md-4">
+                    <div class="footer__logo mt-5">
+                        <a href="#">Diner</a>
+                    </div>
+                    <p class="footer__p">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.
+                        Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+                    <div class="footer__item__1__social">
+                        <a href="#" class="facebook">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+                        <a href="#" class="twitter">
+                            <span class="fab fa-twitter"></span>
+                        </a>
+                        <a href="#" class="instagarm">
+                            <span class="fab fa-instagram"></span>
+                        </a>
+                        <a href="#" class="linkedin">
+                            <span class="fab fa-linkedin"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__item__2 col-12 col-sm-6 col-md-2">
+                    <ul>
+                        <h1 class="footer__h mt-5">Usefull Links</h1>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog post</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item__3 col-12 col-sm-6 col-md-2">
+                    <ul>
+                        <h1 class="footer__h mt-5">More Info</h1>
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+                        <li>
+                            <a href="#">Vision & Values</a>
+                        </li>
+                        <li>
+                            <a href="#">Awards</a>
+                        </li>
+                        <li>
+                            <a href="#">Media</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item__4 col-12 col-sm-12 col-md-4">
+                    <h1 class="footer__h mt-5">Subscribe to our Newsletter</h1>
+                    <p class="footer__p">Enter your email and receive the latest news, updates and special offers from
+                        us.</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="copyright">
+        <div class="container">
+            <div class="copyright__list row">
+                <p class="col-md-8 col-sm-12">
+                    © 2021 Diner. All rights reserved. Design by
+                    <a href="#">W3Layouts</a>
+                </p>
+                <div class="copyright__item col-md-4 col-sm-12">
+                    <div class="d-flex ">
+                        <a href="#">Career</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- *jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <!-- owlcarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <!-- waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous"></script>
+    <!-- counter up cdn -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous"></script> -->
+    <script src="./js/tmp.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
